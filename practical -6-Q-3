@@ -1,0 +1,20 @@
+ATM Pin authentication.
+
+#include <stdio.h>
+
+int main() {
+    int pin, correctPin = 1234;
+
+    printf("Enter your ATM PIN: ");
+    scanf("%d", &pin);
+
+    if (pin == correctPin) {
+        printf("PIN Verified Successfully!\n");
+        printf("Welcome to ATM Services.");
+    } else {
+        printf("Incorrect PIN!\n");
+        printf("Please try again.");
+    }
+
+    return 0;
+}
